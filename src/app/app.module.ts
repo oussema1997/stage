@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterAdminComponent } from './BackOffice/footer-admin/footer-admin.component';
@@ -13,8 +12,12 @@ import { BodyUserComponent } from './FrontOffice/body-user/body-user.component';
 import { AllTemplateUserComponent } from './FrontOffice/all-template-user/all-template-user.component';
 import { HomeComponent } from './FrontOffice/home/home.component';
 import { NavBarAdminComponent } from './BackOffice/nav-bar-admin/nav-bar-admin.component';
-import { ReservationComponent } from './Models/reservation/reservation.component';
-import { ResComponent } from './FrontOffice/res/res.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductsComponent } from './FrontOffice/productsCreate/products.component';
+import {Form, FormsModule} from '@angular/forms';
+import { AddProductsComponent } from './FrontOffice/add-products/add-products.component';
+import { ProductListComponent } from './FrontOffice/product-list/product-list.component';
+
 
 @NgModule({
   declarations: [
@@ -35,12 +38,17 @@ import { ResComponent } from './FrontOffice/res/res.component';
     SideBarComponent,
     BodyAdminComponent,
     FooterAdminComponent,
-    ReservationComponent,
-    ResComponent,
+    ProductsComponent,
+    AddProductsComponent,
+    ProductListComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
