@@ -6,6 +6,8 @@ import { AllTemplateAdminComponent } from './BackOffice/all-template-admin/all-t
 import { BodyAdminComponent } from './BackOffice/body-admin/body-admin.component';
 import { ProductsComponent } from './FrontOffice/productsCreate/products.component';
 import { ProductListComponent } from './FrontOffice/product-list/product-list.component';
+import { UpdateProductComponent } from './FrontOffice/update-product/update-product.component';
+
 
 const routes: Routes = [
   {
@@ -20,6 +22,10 @@ const routes: Routes = [
         {
           path:"list-products",
           component:ProductListComponent
+        },
+        {
+          path:"update-products/:id",
+          component:UpdateProductComponent
         },
         {
         path: 'home',

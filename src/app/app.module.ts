@@ -15,8 +15,8 @@ import { NavBarAdminComponent } from './BackOffice/nav-bar-admin/nav-bar-admin.c
 import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './FrontOffice/productsCreate/products.component';
 import {Form, FormsModule} from '@angular/forms';
-import { AddProductsComponent } from './FrontOffice/add-products/add-products.component';
 import { ProductListComponent } from './FrontOffice/product-list/product-list.component';
+import { UpdateProductComponent } from './FrontOffice/update-product/update-product.component';
 
 
 @NgModule({
@@ -39,8 +39,9 @@ import { ProductListComponent } from './FrontOffice/product-list/product-list.co
     BodyAdminComponent,
     FooterAdminComponent,
     ProductsComponent,
-    AddProductsComponent,
+    
     ProductListComponent,
+    UpdateProductComponent,
     
     
   ],

@@ -29,7 +29,7 @@ export class ProductListComponent implements OnInit {
   }
 
   updateProduct(id: number){
-    this.router.navigate(['update', id]);
+    this.router.navigate(['user','update-products', id]);
   }
 
 
