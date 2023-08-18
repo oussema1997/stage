@@ -1,0 +1,13 @@
+<div class="d-flex border-2 p-2 m-2 rounded-2 shadow-lg justify-content-center">
+  <form (ngSubmit)="OnSubmit()">
+    <h1>Add Product :</h1>
+    <div class="info">
+      <input type="text" name="name" placeholder="nom produit" [(ngModel)]="produit.NomProduit">
+      <input type="number" name="name" placeholder="prix produit" [(ngModel)]="produit.prixProduit">
+      <input type="text" name="name" placeholder="description produit" [(ngModel)]="produit.descriptionProduit">
+      <!-- <input type="file" name="image" [(ngModel)]="produit.image"> -->
+    </div>
+   
+    <button type="submit" href="/user/products">Submit</button>
+  </form>
+</div>
